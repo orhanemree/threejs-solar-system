@@ -39,7 +39,7 @@ scene.add(pointLight, ambientLight);
 const controls = new OrbitControls(camera, renderer.domElement);
 
 // Grid Helper
-const gridHelper = new THREE.GridHelper(500, 50);
+const gridHelper = new THREE.GridHelper(200, 50);
 scene.add(gridHelper);
 gridHelper.visible = false;
 
@@ -160,8 +160,8 @@ const planets = [
     "positionRealistic": 33.5,
     "position": 70,
     "orbit": 0,
-    "aroundSun": 19.2,
-    "aroundSelf":  14794
+    "aroundSun": 6.80,
+    "aroundSelf":  9320
   },
   {
     "name": "neptune",
@@ -201,7 +201,7 @@ planets.forEach(planet => {
           if (planet.name === "earth"){
             const days = (planet.aroundSelf * Math.PI) / 90 * speed;
             day += days / 365;
-            dayCounter.innerText = Math.round(day)
+            dayCounter.innerText = Math.round(day);
           }
         }
         renderer.render(scene, camera);
@@ -224,7 +224,7 @@ planets.forEach(planet => {
           if (planet.name === "earth"){
             const days = (planet.aroundSelf * Math.PI) / 90 * speed;
             day += days / 365;
-            dayCounter.innerText = Math.round(day)
+            dayCounter.innerText = Math.round(day);
           }
         }
         renderer.render(scene, camera);

@@ -1,7 +1,7 @@
 # 🪐 Threejs Solar System
 3D solar system simulation made with three.js
 
-[👉 Visit site](https://github.com)
+[👉 Visit site](https://threejssolarsystem.netlify.app/)
 
 ## 📚 Resources
 * [Three.js](https://github.com/mrdoob/three.js)

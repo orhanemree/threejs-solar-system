@@ -49,7 +49,6 @@ gridCheckbox.addEventListener("click", () => {
 
 // Background
 const background = new THREE.TextureLoader().load("background.jpg");
-console.log(scene.background === null)
 backgroundCheckbox.addEventListener("click", () => {
   if (scene.background === null){
     scene.background = background;
@@ -230,8 +229,5 @@ planets.forEach(planet => {
         renderer.render(scene, camera);
       }
       animate();
-      console.log("a")
   }
 });
-
-console.log(scene)

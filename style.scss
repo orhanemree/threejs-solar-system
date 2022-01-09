@@ -20,4 +20,23 @@ main{
             color: white;
         }
     }
+    .github{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        padding: 10px;
+        opacity: .7;
+        transition: 200ms all;
+        -webkit-transition: 200ms all;
+        -moz-transition: 200ms all;
+        -ms-transition: 200ms all;
+        -o-transition: 200ms all;
+        &:hover{
+            opacity: .5;
+        }
+        svg{
+            fill: white;
+        }
+    }
 }
